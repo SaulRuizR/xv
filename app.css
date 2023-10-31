@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Send+Flowers&display=swap');
+
+:root{
+    --rosaPalo: #BA7A7C;
+    --rosaPaloSuave: #EDD;
+    --rosaPaloFuerte: #87494F;
+    --fondo: #FAF7F6;
+    --capa: #ba7a7c41;
+
+    --fuenteTitulos: 'Send Flowers', cursive;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--fondo);
+    font-family: sans-serif;
+}
+.contenedor{
+    width: min(450px, 100%);
+    margin: 0 auto;
+}
+.header__fondo{
+    position: relative;
+    height: 600px;
+    background-image: url("img/banner1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+}
+.header__capa{
+    width: 100%;
+    height: 100%;
+    background-color: var(--capa);
+
+}
+.header__titulo, .header__fecha{
+    position: absolute;
+    color: var(--fondo);
+    font-family: var(--fuenteTitulos);
+    font-size: 50px;
+    text-align: center;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.header__fecha{
+    top: 70%;
+    font-weight: bold;
+}
+.mensaje{
+    position: relative;
+    background-image: url("img/rosas1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+    height: 450px;
+}
+.mensaje__textos{
+    position: absolute;
+    width: 300px;
+    text-align: center;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.mensaje__texto{
+    font-size: 20px;
+}
+.padres, .xvaños{
+    font-family: var(--fuenteTitulos);
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+.fecha{
+    background-image: url(img/rosas2.png);
+    background-position: center;
+    background-size: 150px;
+    background-repeat: no-repeat;
+    height: 200px;
+}
+.fecha__contenedor{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.fecha__dia{
+    grid-column: 1 / 3;
+    text-align: center;
+    font-family: var(--fuenteTitulos);
+    font-size: 40px;
+    font-weight: bold;
+}
+.fecha__lugar{
+    grid-row: 2 / 3;
+    grid-column: 1 / 3;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+    font-size: 20px;
+    margin-top: 10px;
+}
+.misa p, .recepcion p{
+    margin-bottom: 15px;
+}
+.boton{
+    margin-top: 15px;
+    padding: 10px 15px;
+    font-size: 15px;
+    background-color: var(--rosaPalo);
+    border-radius: 10px;
+    text-decoration: none;
+    color: var(--fondo);
+}
+.galeria__titulo{
+    text-align: center;
+    font-size: 20px;
+}
+.slider{
+    margin: 0 auto;
+    width: 350px;
+    position: relative;
+    display: flex;
+    overflow: scroll;
+    scroll-snap-type: x mandatory;
+}
+.slider img{
+    width: 100%;
+    left: 0;
+    position: sticky;
+    object-fit: cover;
+    border-radius: 5px;
+    scroll-snap-align: center;
+}
+.timer__titulo, .timer__texto{
+    text-align: center;
+    font-size: 20px;
+    margin-top: 10px;
+}
+.timer{
+    pointer-events: none;
+}
+.timer__texto{
+    font-size: 15px;
+}
+.asistencia{
+    text-align: center;
+    margin-top:20px;
+}
