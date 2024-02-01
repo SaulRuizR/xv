@@ -51,6 +51,10 @@ body{
     top: 70%;
     font-weight: bold;
 }
+.reproductor{
+    position: absolute;
+    z-index: 5;
+}
 .mensaje{
     position: relative;
     background-image: url("img/rosas1.png");
